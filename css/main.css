@@ -1,0 +1,15 @@
+#header_wrapper{
+  background-color: #2980B9;
+  top: 0;
+
+
+}
+#header{
+  background-image: "./images/email-3.jpg"
+
+}
+body{
+  top:  0;
+  marigin:  0 auto;
+  font-family: trail;
+}
