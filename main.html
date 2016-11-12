@@ -5,26 +5,30 @@
     
   </title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body id="main-page">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
 <header id="header">
 
 <div id="header_wrapper">
-  <a href="/" id="logo"><b>☸</b>emails</a>
   <nav id="main-nav">
-    <ul>
+
+  <a href="/" id="logo"><b>☸</b>emails</a>
+    <ul id="navul">
       <li>
-        <a href="">Product</a>
+        <a class="a" href="">Product</a>
         <ul>
           <li><a href="">Tour</a></li>
           <li><a href="">Connectors</a></li>
           <li><a href="">App marketing</a></li>
         </ul>
       </li>
-      <li><a href="">Pricing</a></li>
-      <li><a href="">Resources</a></li>
-      <li><a href="">Blog</a></li>
+      <li><a class="a" href="">Pricing</a></li>
+      <li><a class="a" href="">Resources</a></li>
+      <li><a class="a" href="">Blog</a></li>
     </ul>
   </nav>
    <nav id="top-links">
@@ -43,5 +47,27 @@
     </div>
 </header>
 
+<footer id="footer">
+  <img src="images/logo.png" width="200px" height="200px" id="shindlogo">
+  <p>2015 All Rights Reserved. Developed by ProgressionStudios</p>
+    
+ 
+  
+</footer>
+<script type="text/javascript">
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 60) {
+      $('#main-nav').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 60) {
+      $('#main-nav').removeClass('navbar-fixed');
+    }
+  });
+});
+</script>
 </body>
 </html>
