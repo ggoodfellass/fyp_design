@@ -99,6 +99,8 @@ body{
 
 
 #logo{
+  transition-duration: 1s;
+ -webkit-transition-duration: 1s;
   font-size: 27px;
   float: left;
   text-align: center;
@@ -161,7 +163,7 @@ body{
 #main-message{
   color: white;
   font-weight: bold;
-  font-size: 31px;
+  font-size: 200%;
   margin-top: 100px;
   line-height: 42px;
   text-align: center;
